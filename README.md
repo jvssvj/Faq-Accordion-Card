@@ -35,7 +35,7 @@
 |||
 | :----- | :----- |
 | Solution URL: | [Frontend Mentor - Faq Accordion Card](https://www.frontendmentor.io/solutions/faq-accordion-card-main-8lod07jmP2) |
-| Live Site URL: | <a target href="https://jvssvj.github.io/jvssvj-Faq-Accordion-Card/" target="_blank">Faq Accordion Card</a>
+| Live Site URL: | <a target href="https://jvssvj.github.io/Faq-Accordion-Card/" target="_blank">Faq Accordion Card</a>
 |||
 
 <br>
