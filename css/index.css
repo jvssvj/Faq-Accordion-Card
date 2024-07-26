@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --VeryDarkDesaturated: hsl(238, 29%, 16%);
+    --SoftRed: hsl(14, 88%, 65%);
+    --VeryDarkGrayish: hsl(237, 12%, 33%);
+    --DarkGrayishBlue: hsl(240, 6%, 50%);
+    --LightGrayishBlue: hsl(240, 5%, 91%);
+    --White: hsl(0, 0%, 100%);
+    --LinearBG1:hsl(273, 75%, 66%);
+    --LinearBG2:hsl(240, 73%, 65%);
+    --FontKumbh: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, var(--LinearBG1), var(--LinearBG2));
+    font-family: var(--FontKumbh);
+    font-size: .75rem;
+    margin: 0em 2em;
+}
+
+.faq__content {
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 923px;
+    border-radius: 2rem;
+    padding: 4.5rem 6rem 5rem 0em;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 900px;
+    background-position: -43em -22em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 35px 200px -12px;
+}
+
+.faq__content__background {
+    width: 100%;
+    max-width: 391px;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq__content__background__desktop {
+    margin-left: -7em;
+}
+
+.faq__content__background__box {
+    position: absolute;
+    margin: 7em 0em 0em -7.7em;
+    z-index: 1;
+}
+
+.faq__content__questions {
+    width: 100%;
+    max-width: 352px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.line {
+    height: 1px;
+    background-color: hsla(0, 0%, 50%, 0.281);
+}
+
+.faq__t {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.faq__content__t {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .9rem;
+    transition: 0.2s ease;
+    color: var(--VeryDarkDesaturated);
+}
+
+.faq__content__t:hover {
+    color: var(--SoftRed);
+    cursor: pointer;
+}
+
+.faq__content__2__t {
+    font-weight: bold;
+}
+
+.faq__content__p {
+    margin-top: 1rem;
+    color: var(--DarkGrayishBlue);
+}
+
+.attribution {
+    position: absolute;
+    text-align: center;
+    margin-top: 73em;
+    padding: .5rem;
+    color: var(--LightGrayishBlue);
+}
+
+.attribution a {
+    color: var(--SoftRed);
+    font-weight: 700;
+}
+
+.questions summary .arrow__icon {
+    transition: transform .5s;
+  }
+  
+.questions details[open] summary .arrow__icon {
+    transform: rotate(-180deg);
+}
+
+.fade {
+    animation: opacity .5s ease;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
